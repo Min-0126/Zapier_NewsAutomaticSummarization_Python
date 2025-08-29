@@ -13,7 +13,7 @@ def get_news(api_key, keyword, max_results):
     descriptions = [(a.get("description") or "").strip() for a in arts]
     urls = [(a.get("url") or "").strip() for a in arts]
 
-    # ✅ 다음 스텝들에서 쓰기 쉽도록 keyword와 개수도 함께 반환
+    #다음 스텝들에서 쓰기 쉽도록 keyword와 개수도 함께 반환
     return {
         "keyword": keyword,
         "count": len(arts),
@@ -23,7 +23,7 @@ def get_news(api_key, keyword, max_results):
     }
 
 api_key = input_data.get("api_key")
-keyword = input_data.get("keyword")            # ← 스텝의 Input Data(예: 'AI')를 그대로 씀
+keyword = input_data.get("keyword")            # 스텝의 Input Data(예: 'AI')를 그대로 씀
 # n 또는 max_results 어느 쪽이든 받기
 max_results = input_data.get("n", input_data.get("max_results", 5))
 
