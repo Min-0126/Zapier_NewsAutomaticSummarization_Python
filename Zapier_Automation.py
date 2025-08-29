@@ -24,6 +24,7 @@ def get_news(api_key, keyword, max_results):
 
 api_key = input_data.get("api_key")
 keyword = input_data.get("keyword")            # 스텝의 Input Data(예: 'AI')를 그대로 씀
+
 # n 또는 max_results 어느 쪽이든 받기
 max_results = input_data.get("n", input_data.get("max_results", 5))
 
