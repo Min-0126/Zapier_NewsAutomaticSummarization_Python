@@ -127,7 +127,7 @@ output = get_news(api_key, keyword, max_results)
 
 ## Author
 
-Jongmin Kim
+Jongmin Kim (Min)
 
 email: minha0126@proton.me
 
